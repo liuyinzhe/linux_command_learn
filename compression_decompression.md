@@ -42,3 +42,24 @@ xz -k file
 xz  -dk file.xz
 xzcat file.xz >file
 ```
+## tar
+> -c, --create               create a new archive  
+  -j, --bzip2                filter the archive through bzip2  
+  -J, --xz                   filter the archive through xz  
+      --lzip                 filter the archive through lzip  
+      --lzma                 filter the archive through lzma    
+      --lzop  
+      --no-auto-compress     do not use archive suffix to determine the compression program  
+  -z, --gzip, --gunzip, --ungzip   filter the archive through gzip  compression program  
+  -v, --verbose              verbosely list files processed  
+
+
+### *.tar.bz2  
+#### compression  
+```
+tar -jcvf archive_name.tar.bz2 archive_name
+```
+#### decompression
+```bash
+tar -xjf samtools-1.18.tar.bz2
+```
