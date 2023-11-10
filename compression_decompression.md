@@ -63,3 +63,13 @@ tar -jcvf archive_name.tar.bz2 archive_name
 ```bash
 tar -xjf samtools-1.18.tar.bz2
 ```
+
+### *.tar.zx  
+#### compression  
+```
+tar -Jcvf archive_name.tar.zx archive_name
+```
+#### decompression
+```bash
+tar -xJf archive_name.tar.zx
+```
