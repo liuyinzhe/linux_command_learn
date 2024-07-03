@@ -1,7 +1,8 @@
 
 #resume from break-point
-#               rsync://[USER@]HOST[:PORT]/DEST
-rsync -alhP -r ${ip}:/home/xxx/database/ /mnt/data/database/ >log 2>err 
+rsync -alhP -r user@${ip}:/home/xxx/database/ /mnt/data/database/ >log 2>err 
+#服务器将默认的SSH端口改成了别的如9527
+rsync -alhP -e 'ssh -p 9527' -r user@${ip}:/home/xxx/database/ /mnt/data/database/ >log 2>err 
 # ctrl + z 暂停任务
 # jobs# fg %1
 # disown -h %1
