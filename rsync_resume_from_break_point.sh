@@ -1,6 +1,6 @@
 
 #resume from break-point
-
+#               rsync://[USER@]HOST[:PORT]/DEST
 rsync -alhP -r ${ip}:/home/xxx/database/ /mnt/data/database/ >log 2>err 
 # ctrl + z 暂停任务
 # jobs# fg %1
