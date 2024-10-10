@@ -12,3 +12,7 @@
 #accessKeyID=xxxxxxxxxxxxxxxxxxxxxxx
 #accessKeySecret=xxxxxxxxxxxx
 #endpoint=oss-cn-shanghai.aliyuncs.com #oss-cn-beijing.aliyuncs.com
+
+
+# 阿里服务器
+# https://zhuanlan.zhihu.com/p/400437106
