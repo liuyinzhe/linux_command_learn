@@ -7,12 +7,15 @@
 
 # .ossutilconfig
 
-#[Credentials]
-#language=CH
-#accessKeyID=xxxxxxxxxxxxxxxxxxxxxxx
-#accessKeySecret=xxxxxxxxxxxx
-#endpoint=oss-cn-shanghai.aliyuncs.com #oss-cn-beijing.aliyuncs.com
+[default]
+#accessKeyId=xxxxxxxxx
+#accessKeySecret=xxxxxxxxx
+#region=cn-beijing
+#endpoint=oss-cn-beijing.aliyuncs.com
+
 
 
 # 阿里服务器
 # https://zhuanlan.zhihu.com/p/400437106
+# OSS地域和访问域名
+# https://help.aliyun.com/zh/oss/user-guide/regions-and-endpoints
