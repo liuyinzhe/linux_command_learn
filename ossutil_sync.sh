@@ -13,9 +13,16 @@
 #region=cn-beijing
 #endpoint=oss-cn-beijing.aliyuncs.com
 
-
+ossutil sync \
+ -i xxxx \
+ -k yyyy \
+ -e  oss-cn-beijing.aliyuncs.com \
+ oss://annoroad-cloud-product/project/Rawdata \
+  ./raw
 
 # 阿里服务器
 # https://zhuanlan.zhihu.com/p/400437106
 # OSS地域和访问域名
 # https://help.aliyun.com/zh/oss/user-guide/regions-and-endpoints
+
+
