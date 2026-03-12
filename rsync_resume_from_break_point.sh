@@ -3,7 +3,7 @@
 rsync -alhP -r user@${ip}:/home/xxx/database/ /mnt/data/database/ >log 2>err 
 #服务器将默认的SSH端口改成了别的如9527
 rsync -alhP -e 'ssh -p 9527' -r user@${ip}:/home/xxx/database/ /mnt/data/database/ >log 2>err 
-# ctrl + z 暂停任务
+# ctrl + z 暂停任务 #删除kill %1/kill -9 %1
 # jobs#bg %1 # #fg %1
 # disown -h %1
 # or 
