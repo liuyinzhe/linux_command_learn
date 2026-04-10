@@ -34,6 +34,8 @@ zstd --help
 zstd file
 # 在压缩操作后删除源文件
 zstd --rm file
+# 在压缩操作后删除源文件，忽略文件检查(软连)，直接追溯压缩文件内容，并删除当前软链
+zstd -f --rm file_link
 ```
 
 #### 文件解压
