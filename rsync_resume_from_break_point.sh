@@ -7,7 +7,7 @@ rsync -alhP -e 'ssh -p 9527' -r user@${ip}:/home/xxx/database/ /mnt/data/databas
 # jobs#bg %1 # #fg %1
 # disown -h %1
 # or 
-# nohup rsync -alhP -r ${ip}:/home/xxx/database/ /mnt/data/database/ >log 2>err  & disown
+# nohup rsync -alhP --append-verify -r ${ip}:/home/xxx/database/ /mnt/data/database/ >log 2>err  & disown
 
 # 迭代目录
 #    -r, --recursive             recurse into directories
