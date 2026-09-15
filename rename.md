@@ -33,3 +33,12 @@ conda create -n perl-rename-env -c bioconda rename
 conda activate perl-rename-env
 rename --version  # 应显示 Perl 版本信息
 ```
+
+# 使用
+## util-linux reanme
+### 替换-开头内容
+```
+# 标准解法是使用双连字符 --，它明确告知命令：“-- 之后的所有内容都是普通参数，不再是选项
+rename -- -5 _5 *.gz
+rename -- -3 _3 *.gz
+```
