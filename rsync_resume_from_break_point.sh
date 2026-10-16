@@ -62,3 +62,8 @@ rsync -alhP -e 'ssh -p 9527' -r user@${ip}:/home/xxx/database/ /mnt/data/databas
 # -A, --acls                  preserve ACLs (implies --perms)
 # -X, --xattrs                preserve extended attributes
 # -H, --hard-links            preserve hard links
+
+# 下载 ftp 地址的数据
+rsync -avzP --timeout=60 --partial --progress --checksum \
+  rsync://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1KG_ONT_VIENNA/release/v1.0/delly-unfiltered-hg38/all.delly.hg38.1kGP.ont.bcf.csi \
+  ./all.delly.hg38.1kGP.ont.bcf.csi
